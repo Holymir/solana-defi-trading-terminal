@@ -1,0 +1,17 @@
+{
+  "name": "sol-trading",
+  "private": true,
+  "version": "0.1.0",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "npm run -ws build",
+    "dev:indexer": "npm run -w @sol-trading/indexer dev",
+    "dev:api": "npm run -w @sol-trading/api dev"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.3"
+  }
+}
